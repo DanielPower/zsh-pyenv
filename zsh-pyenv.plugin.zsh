@@ -16,7 +16,7 @@ _zsh_pyenv_install() {
 }
 
 _zsh_pyenv_load() {
-    eval "$(pyenv init -)"
+    eval "$(pyenv init - --no-rehash)"
     eval "$(pyenv virtualenv-init -)"
 }
 
